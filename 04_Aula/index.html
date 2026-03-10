@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de input</h1>
+
+    <form action="" style="width: 333px; height: 300px; text-align: center;">
+        
+        <fieldset>
+            <legend>Dados de Cadastramento</legend>
+            <p style="display: flex; align-items: flex-start;"></p>
+            <label for="Login">Login</label><br>
+            <input id="Login" name="Login" type="text" placeholder="Escreva seu Login"><br><br>
+
+            <label for="Senha">Senha</label><br>
+            <input id="Senha" name="Senha" type="password" placeholder="Escreva sua Senha"><br><br>
+
+            <label for="Email">Email
+            <br><input id="Email" name="Email" type="email" placeholder="Escreva seu Email">
+            </label><br><br><br>
+
+            <input type="submit" value="Enviar" name="botao" id="botao" style="width: 100px; height: 25x;">
+
+        </fieldset>
+
+    </form><br>
+
+    <!-- Outros inputs -->
+
+    <fieldset style="width: 300px; height: 190px;">
+        <legend>Datas</legend>
+        <p style="display: flex; align-items: flex-start;"></p>
+        <label for="Data">Data</label>
+        <input type="date" name="Data" id="Data"><br><br>
+
+        <label for="Hora">Hora</label>
+        <input type="time" name="Hora" id="Hora"><br><br>
+
+        <label for="DataHora">Data e Hora</label>
+        <input type="datetime-local" name="DataHora" id="DataHora">
+    </fieldset>
+    <br><br>
+
+    <fieldset style="width: 300px; height: 350px;">
+        <legend>Áreas</legend>
+        <p style="display: flex; align-items: flex-start;"></p>
+        <label for="Telefone">Telefone</label>
+        <input type="tel" name="Telefone" id="Telefone" pattern="[0-9]{3}--[0-9]{5}--[0-9]{4}"><br><br>
+
+        <label for="Número">Número</label>
+        <input type="number" name="Número" id="Número" min="-50" max="100"><br><br><br>
+
+        <input type="range" name="barra" id="" style="width: 235px;" min="0" max="100" value="50" step="10"><br><br><br>
+
+        <label for="area">Área</label><br>
+        <textarea name="area" id="area" style="width: 235px; height: 100px;"></textarea>
+    </fieldset><br><br>
+
+    <fieldset style="width: 300px; height: 350px;">
+        <legend>Caixas de Seleção</legend>
+        <input type="color" name="" id=""><br><br>
+
+        <label for="radio">Selecione seu gênero</label><br>
+        <input type="radio" name="radio" id="radio" value="Masc">Masculino<br>
+        <input type="radio" name="radio" id="radio" value="Femin">Feminino<br>
+        <input type="radio" name="radio" id="radio" value="Outro">Outro<br><br><br>
+
+        <label for="">Selecione seu gênero</label><br>
+        <input type="checkbox" name="checkbox" id="" value="Tiktok">Tiktok<br>
+        <input type="checkbox" name="checkbox2" id="" value="instagram">instagram<br>
+        <input type="checkbox" name="checkbox3" id="" value="telegram">telegram<br><br><br>
+    
+        <label for="">Selecione sua Cidade</label>
+        <select name="Cidade" id="Cidade">
+            <optgroup name="ES" value="ES" label="Espírito Santo">
+                <option value="Vila">Vila Velha</option>
+                <option value="Cariacica">Cariacica</option>
+                <option value="Serra">Serra</option>
+                <option value="Vitoria">Vitoria</option>
+            </optgroup>
+
+            <optgroup name="RJ" value="RJ" label="Rio de Janeiro">
+                <option value="Vila">Campo dos goytacazes</option>
+                <option value="Cariacica">Rio de Janeiro</option>
+                <option value="Serra">Morro da penha</option>
+            </optgroup>
+        </select><br><br>
+    </fieldset><br><br><br>
+
+    <input type="reset" value="Resetar">
+</body>
+</html>

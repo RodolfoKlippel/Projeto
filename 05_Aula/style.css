@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(252, 127, 127);
+    text-align: center;
+}
+
+#h1111{
+    font-size: 60px;
+}
+
+ul{
+    background-color: aqua;
+    list-style: none;
+}
+
+li{
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 50px;
+    font-family: "Comic Sans MS";
+}
+
+#caixa{
+    background-color: rgb(16, 221, 108);
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 100px;
+}
+
+#caixinha{
+    background-color: rgb(172, 248, 136);
+}
+
+.caixas{
+    background-color: white;
+    color: red;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    margin: 50px 25px 50px 25px}
