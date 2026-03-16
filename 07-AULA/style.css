@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(221, 121, 103);
+    font-family: "Comic Sans MS";
+    padding: 20px;
+}
+
+#topo{
+    background-color: lightyellow;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.descricao{
+    font-style: italic;
+}
+
+.bloco{
+    background-color: white;
+    border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+
+.destaque{
+    background-color: crimson;
+    font-weight: bold;
+}
+
+#caixa-unica{
+    background-color: bisque;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+/* p's dentro de divs */
+
+div p{
+    color: rgb(78, 78, 233);
+}
+
+.pai-direto > p{
+    color: green;
+    padding: 5px;
+}
+
+/* um p após h3 */
+
+h3 + p{
+    color: red;
+}
+
+/* todos os p's após h4, desde q sejam irmãos */
+
+h4 ~ p{
+    color: lightcoral;
+}
+
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+a[href*="google"]{
+    color: greenyellow;
+    font-weight: 50px;
+}
+
+h5, h6{
+    color: aqua;
+    font-size: 50px;
+    margin: 5px 0px;
+}
+
+.botao.ativo{
+    color: rgb(42, 138, 138);
+    padding: 50px;
+    font-size: 40px;
+}
+
+p.aviso{
+    color: goldenrod;
+}
+
+div#painel{
+    background-color: red;
+    padding: 10px;
+}
+
+#menu a{
+    color: violet;
+}

@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(255, 214, 214);
+    height: 2000px;
+}
+
+.pai{
+    height: 200px;
+    width: 200px;
+}
+
+.filho{
+    height: 50px;
+    width: 50px;
+}
+
+    /* Tipo estático */
+
+#pai_estatico{
+    background-color: blueviolet;
+    position: static;
+}
+
+#filho_estatico{
+    background-color: green;
+}
+
+    /* Tipo fixo */
+
+#pai_fixo{
+    background-color: rgb(40, 94, 38);
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    right: 0;
+}
+
+#filho_fixo{
+    background-color: rgb(49, 78, 72);
+}
+
+/* Tipo grudado */
+
+#pai_grudado{
+    background-color: crimson;
+    height: 700px;
+    width: 700px;
+}
+
+#filho_grudado{
+    background-color: blue;
+    position: sticky;
+    top: 10%;
+    left: 53%;
+}
+
+/* Tipo Relativa */
+
+#pai_relativa{
+    background-color: black;
+}
+
+#filho_relativa{
+    background-color: darkgray;
+    position: relative;
+    top: 30%;
+}
+
+/* Tipo Absoluta */
+
+#pai_absoluta{
+    background-color: bisque;
+    position: static;
+}
+
+#filho_absoluta{
+    background-color: rgb(126, 107, 33);
+    position: absolute;
+    top: 1000px;
+    left: 300px;
+}
+
+/* Tipo Absoluta e relativa*/
+
+#pai_absoluto_relativo{
+    background-color: rgb(56, 30, 99);
+    position: relative;
+}
+
+#filho_absoluto_relativo{
+    background-color: rgb(212, 88, 5);
+    position: absolute;
+    top: 100px;
+}
