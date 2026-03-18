@@ -1,0 +1,75 @@
+body{
+    background-color: bisque;
+    font-size: 30px;
+    text-align: center;
+}
+
+.quadrado{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    text-shadow: 0.7px 0.7px white;
+    /* float: left; */
+    flex-wrap:wrap;
+    align-content: center;
+}
+
+#quad1{
+    background-color: red;
+    /* permite o item crescer quando se está em 1 */
+    flex-grow: 1;
+}
+
+#quad2{
+    background-color: green;
+    /* não deixa o item deminuir quando se está no 0 */
+    flex-shrink: 0;
+}
+
+#quad3{
+    background-color: yellow;
+    margin-bottom: 0px;
+}
+
+#Bloco_Linha{
+    text-align: center;
+    background-color: white;
+}
+
+/* Block */
+
+#bloco{
+    text-align: center;
+    display: block;
+    background-color: white;
+}
+
+/* Inline-block */
+
+#Bloco_Linha{
+    text-align: center;
+    background-color: white;
+}
+
+/* inline */
+
+#Linha{
+    background-color: aqua;
+    text-align: center;
+}
+
+/* Flex */
+
+#Flex{
+    background-color: aqua;
+    display: Flex;
+    height: 400px;
+    /* flex-direction: row; ou column */
+    /* flex-wrap: wrap; */ 
+    gap: 10px;
+    flex-flow: row nowrap;
+    /* justify-content: space-evenly; */
+        /* Start, End, center, space-between, space-around, space-evenly */
+    /* align-items: center; */
+    /* align-content: center; */
+}

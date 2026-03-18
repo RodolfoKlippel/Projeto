@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "GideonRoman";
+    src: url("./fonts/GideonRoman-Regular.ttf");
+}
+
+*{
+    font-family: "GideonRoman", seriff;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(243, 194, 194);
+    color: black;
+}
+
+h1{
+    color: crimson;
+    font-weight: 700;
+}
+
+h2{
+    color: crimson;
+    font-weight: 400;
+}
+
+.bloco{
+    background-color: rgb(253, 231, 198);
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px;
+}
+
+/* Pseudo-classe */
+
+a{
+    color: aquamarine;
+}
+
+a:link{
+    color: darkslategrey;
+}
+
+a:visited{
+    color: rgb(255, 0, 0);
+}
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: green;
+}
+
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scaleX(1.2);
+    transform: scaleY(1.7);
+}
+
+input:focus{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: 2px solid yellow;
+}
+
+input:required{
+    border: 2px solid maroon;
+    background-color: rgb(255, 138, 138);
+}
+
+input:valid{
+    background-color: greenyellow;
+}
+
+input:invalid{
+    background-color: red;
+}
+
+input:checked{
+    accent-color: green;
+}
+
+input:disabled{
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+.lista-exemplo li:first-child{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lista-exemplo li:last-child{
+    color: rgb(247, 0, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lista-exemplo li:nth-child(3){
+    color: blue;
+}
+
+.caixa-vazia:empty{
+    width: 200px;
+    height: 60px;
+    background-color: pink;
+    border: 2px solid red;
+}
+
+/* Pseudo-Elementos */
+
+h2::before, h2::after{
+    content: "❤️";
+    color: rgb(126, 126, 80);
+}
+
+input::placeholder{
+    color: gray;
+    font-style: italic;
+}
+
+::selection{
+    background-color: yellow;
+    color: green;
+    font-size: bold;
+}
+
+.lista-maker li::marker{
+    color: red;
+    font-size: 20px;
+}
