@@ -1,0 +1,32 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+.icones-google{
+    color: rgb(255, 252, 91);
+    font-size: 100px;
+    padding: 5px;
+    background-color: rgb(109, 239, 131);
+}
+
+.icones-google:hover{
+    color: rgb(109, 239, 131);
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(255, 252, 91);
+}
+
+.icones-awesome{
+    color: rgb(109, 239, 131);
+    font-size: 100px;
+    padding: 5px;
+    background-color: rgb(255, 252, 91);
+}
+
+.icones-awesome:hover{
+    color: rgb(255, 252, 91);
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(109, 239, 131);
+}
