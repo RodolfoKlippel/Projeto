@@ -324,3 +324,57 @@ a{
     margin-bottom: 10px;
     font-weight: 700;
 }
+
+/* Se a tela for tablet */
+
+@media screen and (max-width:1000px){
+    .icon{
+        grid-template-columns: 1fr;
+    }
+
+    .painel-titulos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-inlineblock{
+        width: 48%;
+        margin-right: 2%;
+        margin-top: 10px;
+    }
+}
+
+/* Se a tela for celular */
+
+@media screen and (max-width:600px){
+    .navegacao{
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .icon{
+        grid-template-columns: 1fr;
+    }
+
+    .painel-titulos, .rodape-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .card-inlineblock{
+        display: block;
+        width: 100px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .rodape-grid{
+        text-align: center;
+        justify-items: center;
+        
+    }
+}
