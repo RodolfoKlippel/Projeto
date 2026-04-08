@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container bg-body-tertiary">
+
+    <!-- container = aplica margem -->
+    
+    <header>
+
+        <!-- Barra de Navegação -->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ServMatch</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Trabalhos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        opções
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ações</a></li>
+                        <li><a class="dropdown-item" href="#">outra ação</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">algo aí</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">tmj</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">pesquisar</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bem vindo ao BS</h1>
+
+        <div class="card-group mb-3">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQyhPJYTVsaLZtqnWAV7GYuMxSMY5ZwVUoi83lWhLJe9wc69pevhlYAgfgGnJ3ZnK6gaqLgzmCoYESgsgYEyd4rVQne0m43gx2HYPGdWCVhK8jiWUInCNU80Tp3hqTIyDKTlDRCfYx7OXbQ&s=19" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">neymar junior</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus voluptatum facilis quas qui doloribus nulla sunt autem odio labore iusto similique voluptas modi accusantium necessitatibus illo ea, sequi quasi?</p>
+                </div>
+                <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrq4fetyLMehGX8lhXnVqtukWpJ-dMIRJB_Qx_0DGCbna3lRmORpVY3KPI_1uPHAww8SWnTy2XNuoML6qrTgAdYO6iOuN-P3qsuY9OMF1&s=10" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">neymar junior</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ad tempore, deleniti voluptates voluptate doloremque commodi veniam exercitationem dignissimos ut culpa quasi repudiandae debitis eligendi, vero animi asperiores. Fugit, nihil.</p>
+                </div>
+                <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="data:image/webp;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">neymar junior</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque deserunt, quae quisquam ut hic non quibusdam molestias quidem. Adipisci exercitationem ab nostrum incidunt molestiae veritatis dolorum nisi fugit quisquam!</p>
+                </div>
+                <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <!-- gap = gap -->
+            <!-- row = linha -->
+            <!-- col = coluna -->
+            <!-- bg = background color -->
+            <!-- p = padding -->
+            <!-- md, xl = tamanho da tela -->
+            <!-- y, x = eixo cartesiano -->
+
+            <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">Coluna A</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-danger px-5 text-white">Coluna B</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-info py-5 text-danger">Coluna C</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-5 text-success">Coluna D</div>
+        </div>
+
+        <!-- div Flex -->
+
+        
+        <h2 class="my-3">Display Flex</h2>
+        <div class="d-flex bg-body-secondary justify-content-center align-items-center p-5 flex-wrap flex-md-nowrap gap-3">
+            <div class="p-2 bg-danger text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-danger text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-4">Opção</div>
+        </div>
+
+         <!-- div Grid -->
+
+
+        <h2 class="my-3">Display Grid</h2>
+        <div class="d-grid gap-5">
+            <div class="p-2 bg-danger text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-danger text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-4">Opção</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-4">Opção</div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
