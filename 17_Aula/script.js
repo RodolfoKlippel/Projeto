@@ -1,42 +1,49 @@
-
-teste()
-
-function teste(){
-    console.log("salve.")
+function finalizar(){
+    console.log("acabei")
 }
 
-console.log(teste)
-
-
-teste2(5)
-
-function teste2(parametro){
-    console.log(parametro*2)
+function processar(callback){
+    console.log("iniciando processamento...")
+    callback()
 }
 
-function retorno(num1, num2){
-    return (num1+num2)/2
+processar(finalizar)
+
+//-----------------------------------------------------------
+
+function exercutarTarefa(callback){
+    console.log("Iniciando a execução")
+    setTimeout(callback,3000)
 }
 
-let media = retorno(2,4)
+exercutarTarefa(() => console.log("acabou a tarefa"))
 
-console.log(media)
+//-----------------------------------------------------------
 
-// função anônima, função sem nome com retorno guardado em variável
-
-var mensagem = function (){
-    return console.log("olá")
+function verificar_nota(nota,callback){
+    if(nota>=7){
+        callback()
+    }
 }
 
-console.log(mensagem)
-mensagem()
+verificar_nota(7, () => console.log("parabens"))
 
-const multiplicar = (x,y) =>{
-    return x*y
+//-----------------------------------------------------------
+
+function loginCorreto(){
+    console.log("Logado com sucesso.")
 }
 
-console.log(multiplicar(6,5))
+function loginErrado(){
+    console.log("Login inválido.")
+}
 
-const dobro = x => x*2
+function Logar(senha,callback1,callback2){
+    if(senha === "abc*123"){
+        callback1()
+    }else{
+        callback2()
+    }
+}
 
-console.log(dobro(3))
+Logar("abc*123",loginCorreto,loginErrado)
